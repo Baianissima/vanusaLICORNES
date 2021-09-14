@@ -1,0 +1,29 @@
+/* styles pour les licornes pisola */
+
+/* font-family: 'Courgette', cursive; */
+
+body {
+    background-image: url(../../img/background.png);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+main {
+    width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+
+}
+    /* 
+    Etoiles dans les titres : 
+    FontAwesome 4.6 => fa-star-o
+
+   
+    Couleurs : 
+	barre de menus : #C55394
+	hover menu : #EB43A3
+    titre h1 : #C55394
+    autres titres : #EB43A3
+	footer : #E577B5
+	noir : #333
+	blanc : #FFF */
