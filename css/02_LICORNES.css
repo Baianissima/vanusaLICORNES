@@ -4,7 +4,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 /* debut reset */
@@ -15,13 +14,13 @@
 /* l'étoile/astérisque signifie tout all */
 /* sinon on eut utiliser le reset d'Eric Meyer qui se trouve à cette adresse: http://meyerweb.com/eric/tools/css/reset/  */
 
-/* * {
+* {
     box-sizing: border-box;
-} */
+}
 /* sans le "box-sizing: border-box" ici les elements ne flottent plus */
-/* ci dessus, on met tous les elements en box-sizing, border-box */
+/* ci dessus, on met tous les elements en box-sizing, border-box
 
-/* html, body, div, span, applet, object, iframe,
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -40,32 +39,39 @@ time, mark, audio, video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-} */
+}
 
 /* fin reset simple */
+
+
 
 body {
     background-image: url("../img/background.png");
     font-family: 'Roboto', sans-serif;
 }
 
+/* .rainbow {
+    display: flex;
+    align-items: center;
+} */
+
 main {
-    width: 900px;
+    width: 1000px;
     min-height: 500px;
     margin: 0 auto;
     background-color: #fff;
-    box-shadow: 0 0 50px gray;
+    box-shadow: 30px 20px 50px gray;
     border-radius: 2%;
     /* font-weight: 2em; */
 }
 
 header {
     background: #C55394;
-    height: 100px;
+    height: 80px;
 }
 
-#nav {
-    height: 60px;
+nav {
+    height: 40px;
     padding: 0;
     margin: 0;
     text-align: right;
@@ -74,11 +80,8 @@ header {
 header nav ul li {
     display: inline-block;
     text-transform: uppercase;
+    text-align: right;
     margin:  0 30px;
-    /* padding: 20px; */
-    /* gap: 30px; */
-    /* margin-inline: 15px; */
-    color: white;
 }
 
 nav a {
@@ -92,34 +95,42 @@ header nav ul li a:hover {
     text-decoration: none;
     color: #EB43A3;
 }
-    
+
 header h2 {
+    font-family: 'Courgette', cursive;
+    font-weight: bolder;
+    text-align:left;
     color: white;
-    margin: auto;
-    padding: 20px;
-    /* text-align: center; */
 }
 
 h1 {
-    text-align: center;
-    /* margin-top: ; */
-    margin-bottom: 20px;
-}
-
-h1, h2, h3, h4 {
+    font-family: 'Courgette', cursive;
     color: #C55394;
     font-size: 30px;
     font-weight: bolder;
+    margin-bottom: 50px;
+    margin-top: 0;
+    text-align: center;
+}
+
+h2, h3, h4 {
     font-family: 'Courgette', cursive;
+    color: #EB43A3;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+h3 {
+    text-align: left;
+    padding: 20px;
 }
 
 #figures {
     display: flex;
-    /* flex-direction: column; */
-    /* flex-direction: row;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-evenly; */
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -130,30 +141,54 @@ figcaption {
 }
 
 section {
-    height: 500px;
+    height: 400px;
     margin-bottom: 20px;
+    padding: 20px;
     display: flex;
-    flex-direction: row;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     /* gap: 10px; */
-    border: 1px solid blue
+    border: 1px solid blue;
 }
 
-#texte {
-    text-align: center;
+#section-1 .texte {
+    margin: 20px;
+    height: 400px;
 }
 
-#figure {
+#section-2 {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#section-2 .figures {
+    width: 90%;
     display: flex;
+    justify-content:space-evenly;
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items:center;
 }
 
+#section-3 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.plan {
+    /* width: 40%; */
+    border: 2px solid gray;
+    margin-bottom: 20px;
+}
+
+
 footer {
-    background-color: #e763ae;
+    background-color:#E577B5;
     color: white;
-    height: 80px;
+    height: 70px;
+    text-align: right;
+    padding: 20px 20px 0;
 }
 
 
