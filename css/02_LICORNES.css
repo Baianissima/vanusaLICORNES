@@ -1,0 +1,173 @@
+/* styles pour les licornes pisola */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* debut reset */
+
+/* @charset "UTF-8"; */
+
+/* ICI on utilise le RESET SIMPLE, non celui d Eric Meyer, qui est plus poussé  */
+/* l'étoile/astérisque signifie tout all */
+/* sinon on eut utiliser le reset d'Eric Meyer qui se trouve à cette adresse: http://meyerweb.com/eric/tools/css/reset/  */
+
+/* * {
+    box-sizing: border-box;
+} */
+/* sans le "box-sizing: border-box" ici les elements ne flottent plus */
+/* ci dessus, on met tous les elements en box-sizing, border-box */
+
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+} */
+
+/* fin reset simple */
+
+body {
+    background-image: url("../img/background.png");
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    width: 900px;
+    min-height: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 50px gray;
+    border-radius: 2%;
+    /* font-weight: 2em; */
+}
+
+header {
+    background: #C55394;
+    height: 100px;
+}
+
+#nav {
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+header nav ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    margin:  0 30px;
+    /* padding: 20px; */
+    /* gap: 30px; */
+    /* margin-inline: 15px; */
+    color: white;
+}
+
+nav a {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul li a:hover {
+    text-decoration: none;
+    color: #EB43A3;
+}
+    
+header h2 {
+    color: white;
+    margin: auto;
+    padding: 20px;
+    /* text-align: center; */
+}
+
+h1 {
+    text-align: center;
+    /* margin-top: ; */
+    margin-bottom: 20px;
+}
+
+h1, h2, h3, h4 {
+    color: #C55394;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Courgette', cursive;
+}
+
+#figures {
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly; */
+    justify-content: center;
+    align-items: center;
+}
+
+figcaption {
+    background-color:black;
+    color: white;
+    text-align: center;
+}
+
+section {
+    height: 500px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    /* gap: 10px; */
+    border: 1px solid blue
+}
+
+#texte {
+    text-align: center;
+}
+
+#figure {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+footer {
+    background-color: #e763ae;
+    color: white;
+    height: 80px;
+}
+
+
+
+    /* 
+    Etoiles dans les titres : 
+    FontAwesome 4.6 => fa-star-o
+
+   
+    Couleurs : 
+	barre de menus : #C55394
+	hover menu : #EB43A3
+    titre h1 : #C55394
+    autres titres : #EB43A3
+	footer : #E577B5
+	noir : #333
+	blanc : #FFF */
