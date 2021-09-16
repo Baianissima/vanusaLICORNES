@@ -10,16 +10,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet"> 
     <!-- normalize en externe -->
-    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/normalize.css">
     <!-- mes styles  -->
-    <link rel="stylesheet" href="css/01_pisola_licornes.css">
+    <link rel="stylesheet" href="css/01_pisola_licornes_flex_colonnes.css">
 
 </head>
 <body>
     <!-- en-tête -->
-    <header>
-        <h2>MyUnicorn</h2>
-        <nav>
+    <header class="row">
+        <h2 class="col-2">MyUnicorn</h2>
+        <nav class="marge-7 col-3">
             <a href="#principe" class="">Le principe</a>
             <a href="#licornes" class="">Nos licornes</a>
             <a href="#nous_trouver" class="">Nous trouver</a>
@@ -37,58 +37,62 @@
             
             </section>
             <!-- fin section 1 principe -->
-
+             <!-- la galerie  -->
             <section>
                 <h3 id="licornes">Nos licornes</h3>
-                <figure>
-                    <img src="../img/unicorns/photo1.jpg" alt="Lulu Confetty">
-                    <figcaption>Lulu Confetty</figcaption>
-                </figure>
-                <figure>
-                    <img src="../img/unicorns/photo2.jpg" alt="Lapillon Magik">
-                    <figcaption>Lapillon Magik</figcaption>
-                </figure>
-                <figure>
-                    <img src="../img/unicorns/photo3.jpg" alt="El NinjaCorn">
-                    <figcaption>El NinjaCorn</figcaption>
-                </figure>
-                <figure>
-                    <img src="../img/unicorns/photo4.jpg" alt="Sweety Candy">
-                    <figcaption>Sweety Candy</figcaption>
-                </figure>
+                <div class="row ml-50">
+                    <figure class="col-3">
+                        <img src="img/photo1.jpg" alt="Lulu Confetty">
+                        <figcaption>Lulu Confetty</figcaption>
+                    </figure>
+                    <figure class="col-3">
+                        <img src="img/photo2.jpg" alt="Lapillon Magik">
+                        <figcaption>Lapillon Magik</figcaption>
+                    </figure>
+                    <figure class="col-3">
+                        <img src="img/photo3.jpg" alt="El NinjaCorn">
+                        <figcaption>El NinjaCorn</figcaption>
+                    </figure>
+                    <figure class="col-3">
+                        <img src="img/photo4.jpg" alt="Sweety Candy">
+                        <figcaption>Sweety Candy</figcaption>
+                    </figure>
+                </div>
             </section>
             <!-- fin section 2 licornes-->
 
             <section>
                 <h3 id="nous_trouver">Nous trouver</h3>
 
-                <!-- i frame google maps adresse colombbus -->
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9092271438985!2d2.21152571580728!3d48.85994130855139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e664cb22a29415%3A0xb5785da3aae22abe!2s8%20Bd%20Louis%20Loucheur%2C%2092150%20Suresnes!5e0!3m2!1sfr!2sfr!4v1631630832261!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-                <!-- fin de la div pour l'iframe  -->
-
-                <div id="contact">
-
+                <div class="row">
+                    <!-- i frame google maps adresse colombbus -->
+                    <div class="col-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9092271438985!2d2.21152571580728!3d48.85994130855139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e664cb22a29415%3A0xb5785da3aae22abe!2s8%20Bd%20Louis%20Loucheur%2C%2092150%20Suresnes!5e0!3m2!1sfr!2sfr!4v1631630832261!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <!-- fin de la div pour l'iframe  -->
+                    
+                    <div id="contact" class="col-6">
+                    
                     <h4>Notre élevage de licornes est situé au :</h4>
                         <address>
                             8, bd Loucheur<br>
                             92150 Suresnes<br>
                             01 12 15 16 17
                         </address>
-
-                        <div>
-                            <h4>Newsletter</h4>
-                            <form action="#" method="POST">
-                                <label for="email">Abonnez-vous simplement à notre newsletter mensuelle !</label>
-                                <input type="email" name="email" id="email" placeholder="votre@email.fr" required>
-                                <button>Valider</button>
-
-                            </form>
-                        </div>
-                        <!-- fin div pour le formulaire -->
+                    
+                            <div>
+                                <h4>Newsletter</h4>
+                                <form action="#" method="POST">
+                                    <label for="email">Abonnez-vous simplement à notre newsletter mensuelle !</label>
+                                    <input type="email" name="email" id="email" placeholder="votre@email.fr" required>
+                                    <button>Valider</button>
+                    
+                                </form>
+                            </div>
+                            <!-- fin div pour le formulaire -->
+                    </div>
+                    <!-- fin div infos de contact -->
                 </div>
-                <!-- fin div infos de contact -->
             
             </section>
             <!-- fin section 3 nous_trouver-->
@@ -104,3 +108,4 @@
     
 </body>
 </html>
+

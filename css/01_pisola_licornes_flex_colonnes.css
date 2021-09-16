@@ -1,0 +1,196 @@
+/* styles pour les licornes pisola */
+
+/* font-family: 'Courgette', cursive; */
+
+body {
+    background-image: url("../img/background.png");
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* a partir de box shadow : code Vanusa */
+main {
+    width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 30px 20px 50px gray;
+    border-radius: 2%;
+    padding: 20px;
+}
+
+/* headerde Vanusa */
+
+header {
+    background: #C55394;
+    height: 80px;
+}
+
+/* h1 de Vanusa */
+
+h1 {
+    background: url("../img/rainbow.png") no-repeat center;
+    padding: 120px;
+    padding-bottom: 0;
+}
+
+.bleu-leger {
+    background-color: lightblue;
+}
+
+.vert {
+    background: lightgreen;
+}
+
+.gris-leger {
+    background-color: lightgrey;
+}
+
+/* la classe pour créer une rangée */
+
+.row {
+    display: flex;
+    flex-direction: row;
+    /* passage à la ligne des éléments pour que la largeur des col soit respectée */
+    flex-wrap: wrap;
+    row-gap:5px;
+}
+
+/* la classe pour mettre les éléments les uns en dessous des autres */
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.centre {
+    justify-content: center;
+}
+
+/* la grille sur 12 colonnes, et la définition de la largeur des colonnes */
+
+.col-1 {
+    /* cette valeur est la largeur en % d'une colonne si je veux la largeur de 2 colonnes je fais la largeur d'une colonne X 2 */
+    width: 8.333333%;
+}
+
+.col-2 {
+    width: 16.666666%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.333333%;
+}
+
+.col-5 {
+    width: 41.666666%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.333333%;
+}
+
+.col-8 {
+    width: 66.666666%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.333333%;
+}
+
+.col-11 {
+    width: 91.666666%;
+}
+
+.col-12 {
+    width: 100%;    
+}
+
+/* les marges à gauche pour créer si on le veut des colonnes vides */
+.marge-1 {
+    margin-left: 8.333333%;
+}
+.marge-2 {
+    margin-left: 16.66666%;
+}
+.marge-3 {
+    margin-left: 25%;
+}
+.marge-4 {
+    margin-left: 33.333333%;
+}
+.marge-5 {
+    margin-left: 41.666666%;
+}
+.marge-6 {
+    margin-left: 50%;
+}
+.marge-7 {
+    margin-left: 58.333333%;
+}
+.marge-8 {
+    margin-left: 66.666666%;
+}
+.marge-9 {
+    margin-left: 75%;
+}
+.marge-10 {
+    margin-left: 83.333333%;
+}
+.marge-11 {
+    margin-left: 91.666666%;
+}
+
+h1 {
+    width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+/* pour la galerie d'images  */
+
+.ml-50 {
+    margin-left: 50px;
+}
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figure img {
+    width: 160px;
+}
+
+footer {
+    background-color:#E577B5;
+    color: white;
+    height: 70px;
+    text-align: right;
+    padding: 20px 20px 0;
+    margin-top: 20px;
+}
+    
+    
+    
+    /* 
+    Etoiles dans les titres : 
+    FontAwesome 4.6 => fa-star-o
+
+   
+    Couleurs : 
+	barre de menus : #C55394
+	hover menu : #EB43A3
+    titre h1 : #C55394
+    autres titres : #EB43A3
+	footer : #E577B5
+	noir : #333
+	blanc : #FFF */
