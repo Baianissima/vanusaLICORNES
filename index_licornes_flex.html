@@ -15,11 +15,12 @@
     <script src="https://kit.fontawesome.com/a1a0ce4d00.js" crossorigin="anonymous"></script>
     
     <!-- mes styles  -->
-    <link rel="stylesheet" href="css/02_pisola_licornes_flex.css">
+    <link rel="stylesheet" href="css/style_licornes_flex.css">
 
 </head>
 <body>
     <!-- en-tête -->
+    <!-- ici pour la nav : justify-content:space between / aling-items: center -->
     <header class="d-flex jc-space-between ai-center">
         <h2>MyUnicorn</h2>
         <nav class="d-flex ai-center">
@@ -31,7 +32,7 @@
 
     <div>
         <h1>Un jour, une licorne</h1>
-
+        <!-- ici : padding: 15x pour MAIN -->
         <main id="" class="p-15">
             <section>
                 <h3 id="principe"><i class="far fa-star"></i>Le principe</h3>
@@ -43,7 +44,7 @@
 
             <section>
                 <h3 id="licornes"><i class="far fa-star"></i>Nos licornes</h3>
-
+                <!-- div flex :justify-content: space-around entre les images -->
                 <div id="galerie" class="d-flex jc-space-around">
                     <figure>
                         <img src="img/photo1.jpg" alt="Lulu Confetty" class="img-200">
@@ -67,7 +68,7 @@
 
             <section>
                 <h3 id="nous_trouver"><i class="far fa-star"></i>Nous trouver</h3>
-
+                <!-- gap:20px pour fire des goutieres -->
                 <div class="d-flex g-20">
                     <!-- i frame google maps adresse colombbus -->
                     <div id="map">
